@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>UnityWebGL</title>
+  <style>
+    html body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .middle {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .canvas-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #bdc3c7;
+    }
+
+    #game_container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #load {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #3e3e3e;
+      flex-direction: column;
+    }
+
+    #load img {
+      transform-origin: center;
+    }
+
+    #image {
+      width: 8rem;
+      height: 8rem;
+      max-height: 128px;
+      max-width: 128px;
+      min-width: 64px;
+      min-height: 64px;
+    }
+
+    #info {
+      margin-top: 0.5rem;
+      padding: 0 1rem 0 1rem;
+      background-color: #fbfbfb;
+      color: #34495e;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0.5rem;
+    }
+  </style>
+  <script src="Build/UnityLoader.js"></script>
+  <script src="scripts/eventemitter2.min.js"></script>
+  <script src="scripts/roslib.js"></script>
+</head>
+
+<body>
+  <div id="canvas_parent" class="canvas-container">
+    <div id="game_container"></div>
+    <div class="middle" id="load">
+      <img id="image" src="TemplateData/load.gif">
+      <span id="info">开始加载:0%</span>
+    </div>
+  </div>
+</body>
+<script>
+  var info = document.getElementById("info");
+  function UnityProgress(gameInstance, progress) {
+    if (progress < 0.1) {
+      info.innerText = "开始检测资源：" + parseInt(progress * 100) + "%";
+    } else if (progress < 1) {
+      info.innerText = "正在加载资源，请耐心等候：" + parseInt(progress * 100) + "%";
+    } else if (progress === 1) {
+      info.innerText = "资源就绪，正在初始化场景……";
+      setTimeout(function () {
+        document.getElementById("load").style.display = "none";
+        callUnityFunction("CallText1", "Start");
+        // initRos();
+      }, 50);
+    }
+  }
+  var gameInstance = UnityLoader.instantiate("game_container", "%UNITY_WEBGL_BUILD_URL%", { onProgress: UnityProgress });
+  //更改尺寸
+  var canvas = document.getElementById("#canvas");
+  function changeSize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    setTimeout(function () {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }, 50);
+    setTimeout(function () {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }, 50)
+  }
+  changeSize();
+  //尺寸更改事件
+  window.addEventListener("resize", function () {
+    changeSize();
+  });
+
+  function callUnityFunction(functionName, param) {
+    gameInstance.SendMessage("JSCallGameObject", functionName, param);
+  }
+
+  var ROS1_ADDR = 'wss://192.168.1.145:80';
+  var ROS1 = null;
+  var ROS1_MoveService = null;
+  var ROS1_MoveRequest = null;
+  var ROS1_CameraService = null;
+  var ROS1_CameraRequest = null;
+  var ROS1_ZeroService = null;
+  var ROS1_ZeroRequest = null;
+
+  var ROS2_ADDR = 'wss://192.168.1.146:80';
+
+</script>
+
+</html>

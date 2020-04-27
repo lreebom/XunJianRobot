@@ -1,0 +1,850 @@
+fileFormatVersion: 2
+guid: 8369618115a6caa4c94cbd509a755ce5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: a
+    100002: a001
+    100004: a002
+    100006: a003
+    100008: a004
+    100010: a005
+    100012: a006
+    100014: a007
+    100016: a008
+    100018: a009
+    100020: a010
+    100022: a011
+    100024: a012
+    100026: a013
+    100028: a014
+    100030: a015
+    100032: floor
+    100034: wall
+    100036: //RootNode
+    100038: A
+    100040: "A\u7EC4001"
+    100042: "a\u95E8"
+    100044: "b\u95E8"
+    100046: "c\u95E8"
+    100048: Robot
+    100050: Root
+    100052: "\u5408\u9875"
+    100054: "\u5408\u9875 1"
+    100056: "\u5408\u9875 2"
+    100058: "\u5408\u9875 3"
+    100060: "\u5408\u9875 4"
+    100062: "\u5408\u9875 5"
+    100064: "\u5BF9\u8C61001"
+    100066: "\u5BF9\u8C61002"
+    100068: "\u5BF9\u8C61003"
+    100070: "\u67DC\u5B50"
+    100072: "\u8F68\u9053"
+    100074: fz
+    100076: "\u6A21\u578B_1"
+    100078: body
+    100080: gun-Dummy001
+    100082: gun-Dummy002
+    100084: Robot_Root
+    100086: zhi-jia001
+    100088: zhi-jia002
+    100090: zhi-jia003
+    100092: zhi-jia004
+    100094: zhi-jia005
+    100096: zhi-jia006
+    100098: zhi-jia007
+    100100: "\u68CD"
+    100102: "\u955C\u5934"
+    100104: B-001
+    100106: B-002
+    100108: B-003
+    100110: B-004
+    100112: B-005
+    100114: B-006
+    100116: B-007
+    100118: B-008
+    100120: Box003
+    100122: Box004
+    100124: Box005
+    100126: Box006
+    100128: Box007
+    100130: Box008
+    100132: Line001
+    100134: Line002
+    100136: Line003
+    100138: PeiBian
+    100140: PeiBian001
+    100142: "\u5899\u6761"
+    100144: "\u6728\u677F"
+    100146: "\u6728\u677F001"
+    100148: "\u6728\u677F002"
+    100150: "\u6728\u677F003"
+    100152: "\u68DA"
+    100154: "\u6D88\u9632"
+    100156: "\u6D88\u9632001"
+    100158: "\u6D88\u9632002"
+    100160: "\u8863\u67DC001"
+    100162: "\u8863\u67DC002"
+    100164: "\u8863\u67DC003"
+    100166: "\u8863\u67DC004"
+    100168: "\u8863\u67DC005"
+    100170: "\u95E8"
+    100172: "\u95E8001"
+    100174: "\u95E8002"
+    100176: "\u95E8003"
+    100178: "\u623F\u6881"
+    100180: "\u623F\u6881001"
+    100182: "\u623F\u6881002"
+    100184: "\u626B\u628A"
+    100186: "\u6D88\u9632003"
+    100188: "\u77EC\u5B50"
+    400000: a
+    400002: a001
+    400004: a002
+    400006: a003
+    400008: a004
+    400010: a005
+    400012: a006
+    400014: a007
+    400016: a008
+    400018: a009
+    400020: a010
+    400022: a011
+    400024: a012
+    400026: a013
+    400028: a014
+    400030: a015
+    400032: floor
+    400034: wall
+    400036: //RootNode
+    400038: A
+    400040: "A\u7EC4001"
+    400042: "a\u95E8"
+    400044: "b\u95E8"
+    400046: "c\u95E8"
+    400048: Robot
+    400050: Root
+    400052: "\u5408\u9875"
+    400054: "\u5408\u9875 1"
+    400056: "\u5408\u9875 2"
+    400058: "\u5408\u9875 3"
+    400060: "\u5408\u9875 4"
+    400062: "\u5408\u9875 5"
+    400064: "\u5BF9\u8C61001"
+    400066: "\u5BF9\u8C61002"
+    400068: "\u5BF9\u8C61003"
+    400070: "\u67DC\u5B50"
+    400072: "\u8F68\u9053"
+    400074: fz
+    400076: "\u6A21\u578B_1"
+    400078: body
+    400080: gun-Dummy001
+    400082: gun-Dummy002
+    400084: Robot_Root
+    400086: zhi-jia001
+    400088: zhi-jia002
+    400090: zhi-jia003
+    400092: zhi-jia004
+    400094: zhi-jia005
+    400096: zhi-jia006
+    400098: zhi-jia007
+    400100: "\u68CD"
+    400102: "\u955C\u5934"
+    400104: B-001
+    400106: B-002
+    400108: B-003
+    400110: B-004
+    400112: B-005
+    400114: B-006
+    400116: B-007
+    400118: B-008
+    400120: Box003
+    400122: Box004
+    400124: Box005
+    400126: Box006
+    400128: Box007
+    400130: Box008
+    400132: Line001
+    400134: Line002
+    400136: Line003
+    400138: PeiBian
+    400140: PeiBian001
+    400142: "\u5899\u6761"
+    400144: "\u6728\u677F"
+    400146: "\u6728\u677F001"
+    400148: "\u6728\u677F002"
+    400150: "\u6728\u677F003"
+    400152: "\u68DA"
+    400154: "\u6D88\u9632"
+    400156: "\u6D88\u9632001"
+    400158: "\u6D88\u9632002"
+    400160: "\u8863\u67DC001"
+    400162: "\u8863\u67DC002"
+    400164: "\u8863\u67DC003"
+    400166: "\u8863\u67DC004"
+    400168: "\u8863\u67DC005"
+    400170: "\u95E8"
+    400172: "\u95E8001"
+    400174: "\u95E8002"
+    400176: "\u95E8003"
+    400178: "\u623F\u6881"
+    400180: "\u623F\u6881001"
+    400182: "\u623F\u6881002"
+    400184: "\u626B\u628A"
+    400186: "\u6D88\u9632003"
+    400188: "\u77EC\u5B50"
+    2300000: a
+    2300002: a001
+    2300004: a002
+    2300006: a003
+    2300008: a004
+    2300010: a005
+    2300012: a006
+    2300014: a007
+    2300016: a008
+    2300018: a009
+    2300020: a010
+    2300022: a011
+    2300024: a012
+    2300026: a013
+    2300028: a014
+    2300030: a015
+    2300032: floor
+    2300034: wall
+    2300036: "a\u95E8"
+    2300038: "b\u95E8"
+    2300040: "c\u95E8"
+    2300042: Robot
+    2300044: "\u5408\u9875"
+    2300046: "\u5408\u9875 1"
+    2300048: "\u5408\u9875 2"
+    2300050: "\u5408\u9875 3"
+    2300052: "\u5408\u9875 4"
+    2300054: "\u5408\u9875 5"
+    2300056: "\u5BF9\u8C61001"
+    2300058: "\u5BF9\u8C61002"
+    2300060: "\u5BF9\u8C61003"
+    2300062: "\u67DC\u5B50"
+    2300064: "\u8F68\u9053"
+    2300066: fz
+    2300068: "\u6A21\u578B_1"
+    2300070: body
+    2300072: zhi-jia001
+    2300074: zhi-jia002
+    2300076: zhi-jia003
+    2300078: zhi-jia004
+    2300080: zhi-jia005
+    2300082: zhi-jia006
+    2300084: zhi-jia007
+    2300086: "\u68CD"
+    2300088: "\u955C\u5934"
+    2300090: B-001
+    2300092: B-002
+    2300094: B-003
+    2300096: B-004
+    2300098: B-005
+    2300100: B-006
+    2300102: B-007
+    2300104: B-008
+    2300106: Box003
+    2300108: Box004
+    2300110: Box005
+    2300112: Box006
+    2300114: Box007
+    2300116: Box008
+    2300118: PeiBian
+    2300120: PeiBian001
+    2300122: "\u6728\u677F"
+    2300124: "\u6728\u677F001"
+    2300126: "\u6728\u677F002"
+    2300128: "\u6728\u677F003"
+    2300130: "\u68DA"
+    2300132: "\u6D88\u9632"
+    2300134: "\u6D88\u9632001"
+    2300136: "\u6D88\u9632002"
+    2300138: "\u8863\u67DC001"
+    2300140: "\u8863\u67DC002"
+    2300142: "\u8863\u67DC003"
+    2300144: "\u8863\u67DC004"
+    2300146: "\u8863\u67DC005"
+    2300148: "\u95E8"
+    2300150: "\u95E8001"
+    2300152: "\u95E8002"
+    2300154: "\u95E8003"
+    2300156: Line001
+    2300158: Line002
+    2300160: Line003
+    2300162: "\u5899\u6761"
+    2300164: "\u623F\u6881"
+    2300166: "\u623F\u6881001"
+    2300168: "\u623F\u6881002"
+    2300170: "\u626B\u628A"
+    2300172: "\u6D88\u9632003"
+    2300174: "\u77EC\u5B50"
+    3300000: a
+    3300002: a001
+    3300004: a002
+    3300006: a003
+    3300008: a004
+    3300010: a005
+    3300012: a006
+    3300014: a007
+    3300016: a008
+    3300018: a009
+    3300020: a010
+    3300022: a011
+    3300024: a012
+    3300026: a013
+    3300028: a014
+    3300030: a015
+    3300032: floor
+    3300034: wall
+    3300036: "a\u95E8"
+    3300038: "b\u95E8"
+    3300040: "c\u95E8"
+    3300042: Robot
+    3300044: "\u5408\u9875"
+    3300046: "\u5408\u9875 1"
+    3300048: "\u5408\u9875 2"
+    3300050: "\u5408\u9875 3"
+    3300052: "\u5408\u9875 4"
+    3300054: "\u5408\u9875 5"
+    3300056: "\u5BF9\u8C61001"
+    3300058: "\u5BF9\u8C61002"
+    3300060: "\u5BF9\u8C61003"
+    3300062: "\u67DC\u5B50"
+    3300064: "\u8F68\u9053"
+    3300066: fz
+    3300068: "\u6A21\u578B_1"
+    3300070: body
+    3300072: zhi-jia001
+    3300074: zhi-jia002
+    3300076: zhi-jia003
+    3300078: zhi-jia004
+    3300080: zhi-jia005
+    3300082: zhi-jia006
+    3300084: zhi-jia007
+    3300086: "\u68CD"
+    3300088: "\u955C\u5934"
+    3300090: B-001
+    3300092: B-002
+    3300094: B-003
+    3300096: B-004
+    3300098: B-005
+    3300100: B-006
+    3300102: B-007
+    3300104: B-008
+    3300106: Box003
+    3300108: Box004
+    3300110: Box005
+    3300112: Box006
+    3300114: Box007
+    3300116: Box008
+    3300118: PeiBian
+    3300120: PeiBian001
+    3300122: "\u6728\u677F"
+    3300124: "\u6728\u677F001"
+    3300126: "\u6728\u677F002"
+    3300128: "\u6728\u677F003"
+    3300130: "\u68DA"
+    3300132: "\u6D88\u9632"
+    3300134: "\u6D88\u9632001"
+    3300136: "\u6D88\u9632002"
+    3300138: "\u8863\u67DC001"
+    3300140: "\u8863\u67DC002"
+    3300142: "\u8863\u67DC003"
+    3300144: "\u8863\u67DC004"
+    3300146: "\u8863\u67DC005"
+    3300148: "\u95E8"
+    3300150: "\u95E8001"
+    3300152: "\u95E8002"
+    3300154: "\u95E8003"
+    3300156: Line001
+    3300158: Line002
+    3300160: Line003
+    3300162: "\u5899\u6761"
+    3300164: "\u623F\u6881"
+    3300166: "\u623F\u6881001"
+    3300168: "\u623F\u6881002"
+    3300170: "\u626B\u628A"
+    3300172: "\u6D88\u9632003"
+    3300174: "\u77EC\u5B50"
+    4300000: wall
+    4300002: a
+    4300004: a001
+    4300006: a002
+    4300008: a003
+    4300010: a004
+    4300012: a005
+    4300014: a006
+    4300016: a007
+    4300018: a008
+    4300020: a009
+    4300022: a010
+    4300024: a011
+    4300026: a012
+    4300028: a013
+    4300030: a014
+    4300032: a015
+    4300034: floor
+    4300036: "\u67DC\u5B50"
+    4300038: "a\u95E8"
+    4300040: "b\u95E8"
+    4300042: "c\u95E8"
+    4300044: "\u5408\u9875"
+    4300046: "\u5408\u9875"
+    4300048: "\u5408\u9875"
+    4300050: "\u5408\u9875"
+    4300052: "\u5408\u9875"
+    4300054: "\u5408\u9875"
+    4300056: "\u8F68\u9053"
+    4300058: Robot
+    4300060: "\u5BF9\u8C61003"
+    4300062: "\u5BF9\u8C61002"
+    4300064: "\u5BF9\u8C61001"
+    4300066: fz
+    4300068: "\u6A21\u578B_1"
+    4300070: "\u68CD"
+    4300072: body
+    4300074: "\u955C\u5934"
+    4300076: zhi-jia001
+    4300078: zhi-jia002
+    4300080: zhi-jia003
+    4300082: zhi-jia004
+    4300084: zhi-jia005
+    4300086: zhi-jia006
+    4300088: zhi-jia007
+    4300090: PeiBian
+    4300092: B-001
+    4300094: B-002
+    4300096: B-003
+    4300098: B-004
+    4300100: B-005
+    4300102: B-006
+    4300104: B-007
+    4300106: B-008
+    4300108: PeiBian001
+    4300110: Box003
+    4300112: Box004
+    4300114: "\u8863\u67DC001"
+    4300116: "\u8863\u67DC002"
+    4300118: "\u8863\u67DC003"
+    4300120: "\u8863\u67DC004"
+    4300122: "\u95E8"
+    4300124: "\u95E8001"
+    4300126: "\u95E8002"
+    4300128: Box005
+    4300130: Box006
+    4300132: Box007
+    4300134: "\u8863\u67DC005"
+    4300136: Box008
+    4300138: "\u95E8003"
+    4300140: "\u6D88\u9632"
+    4300142: "\u6D88\u9632001"
+    4300144: "\u6D88\u9632002"
+    4300146: "\u68DA"
+    4300148: "\u6728\u677F"
+    4300150: "\u6728\u677F001"
+    4300152: "\u6728\u677F002"
+    4300154: "\u6728\u677F003"
+    4300156: "\u5899\u6761"
+    4300158: Line001
+    4300160: Line002
+    4300162: Line003
+    4300164: "\u6D88\u9632003"
+    4300166: "\u623F\u6881"
+    4300168: "\u623F\u6881001"
+    4300170: "\u623F\u6881002"
+    4300172: "\u626B\u628A"
+    4300174: "\u77EC\u5B50"
+    6400000: a
+    6400002: a001
+    6400004: a002
+    6400006: a003
+    6400008: a004
+    6400010: a005
+    6400012: a006
+    6400014: a007
+    6400016: a008
+    6400018: a009
+    6400020: a010
+    6400022: a011
+    6400024: a012
+    6400026: a013
+    6400028: a014
+    6400030: a015
+    6400032: floor
+    6400034: wall
+    6400036: "a\u95E8"
+    6400038: "b\u95E8"
+    6400040: "c\u95E8"
+    6400042: Robot
+    6400044: "\u5408\u9875"
+    6400046: "\u5408\u9875 1"
+    6400048: "\u5408\u9875 2"
+    6400050: "\u5408\u9875 3"
+    6400052: "\u5408\u9875 4"
+    6400054: "\u5408\u9875 5"
+    6400056: "\u5BF9\u8C61001"
+    6400058: "\u5BF9\u8C61002"
+    6400060: "\u5BF9\u8C61003"
+    6400062: "\u67DC\u5B50"
+    6400064: "\u8F68\u9053"
+    6400066: fz
+    6400068: "\u6A21\u578B_1"
+    6400070: body
+    6400072: zhi-jia001
+    6400074: zhi-jia002
+    6400076: zhi-jia003
+    6400078: zhi-jia004
+    6400080: zhi-jia005
+    6400082: zhi-jia006
+    6400084: zhi-jia007
+    6400086: "\u68CD"
+    6400088: "\u955C\u5934"
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: fc49c4bf0c2e50f44b037e61333add61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 04 - Default
+    second: {fileID: 2100000, guid: 2cb94ab87a19d7f488c3a6f92a0a5ddd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: 3ffc8dd7119be1b439cf861831c29a03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BC-001
+    second: {fileID: 2100000, guid: 8a3415abd636e094bb0ced000637a8d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BC-002
+    second: {fileID: 2100000, guid: 4c0db6cdcdd7bca4a9157378f1ab93e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BC-003
+    second: {fileID: 2100000, guid: 9ee98cf38564a3143a4eb3b12017a570, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BC-Ce
+    second: {fileID: 2100000, guid: 9135fe78e3532264dababc258b0bb175, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #148'
+    second: {fileID: 2100000, guid: 3289689b05668df4290fc43872538cdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #306'
+    second: {fileID: 2100000, guid: e0a39ebd06f06d84f837fb63ee444422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #319'
+    second: {fileID: 2100000, guid: adb46a3c59ff76d40b8e3258cd325170, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #331'
+    second: {fileID: 2100000, guid: 550017bcfffd8d244a6ad9b14604f181, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #344'
+    second: {fileID: 2100000, guid: 3b089b1aac7ce2c468ec055a897fdb20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #357'
+    second: {fileID: 2100000, guid: 4b2343ad30f2a7842ab49b2e643f0cce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #485'
+    second: {fileID: 2100000, guid: bd90c88944e744d4b90ae34fd6a9d39b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #497'
+    second: {fileID: 2100000, guid: 5f207bfe685f8f8409a6588d46406619, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #511'
+    second: {fileID: 2100000, guid: 5571d8fadcfedaf4d8183c1e53908211, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #512'
+    second: {fileID: 2100000, guid: a2d0d9022e0358f4fb482fd8f7100bef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #524'
+    second: {fileID: 2100000, guid: 6770d9d6157289a43bd596581e044c79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #689'
+    second: {fileID: 2100000, guid: dc6a453e7284200449ff124c162b1eb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #797'
+    second: {fileID: 2100000, guid: 74add16948cf20944877cc3c49237b0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #809'
+    second: {fileID: 2100000, guid: 2fa6f91af88b1a546830ba08ff0337b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #810'
+    second: {fileID: 2100000, guid: 7db3d2dfbb7c9eb46a170da92e094087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PeiBian-f
+    second: {fileID: 2100000, guid: 6338bbb6595f9d441b27ddfc89739ea0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a
+    second: {fileID: 2100000, guid: e2c77b7d05979184f9b3a0e39dd85fd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a-w
+    second: {fileID: 2100000, guid: 44f9c77b614ab8e46bfb2616b530ceb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a0
+    second: {fileID: 2100000, guid: 2f3b76e6d4b80f045ab0ee738dc3ff6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a1
+    second: {fileID: 2100000, guid: a1a98ad4bb223d14f8a20565f58bac93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a2
+    second: {fileID: 2100000, guid: 1c1b41f136b43484b9637b661c2d6995, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a3
+    second: {fileID: 2100000, guid: 9a1e751939f921b48a3c29941c71db20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bar
+    second: {fileID: 2100000, guid: 62025b58df7970d46bcd77173e21a8eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black pastic
+    second: {fileID: 2100000, guid: ee52d6cff8894a0498ba1e653c8475d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black rubber
+    second: {fileID: 2100000, guid: 3ab9374d98b95e342a8c0f5bf485d0c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: 2e39d964d9265d34fb3aa49641e22dff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gui
+    second: {fileID: 2100000, guid: f8b245358f9bc394aa3ee7ce2b9f9027, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gui-dao
+    second: {fileID: 2100000, guid: e706e5ffffca8684485a5e54731af0a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gui-dao-bian
+    second: {fileID: 2100000, guid: bd8ee08b880c3784697170abddc916ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: he-ye
+    second: {fileID: 2100000, guid: d61c29f6d5e82374fa83817a47cb5d07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jing-tou
+    second: {fileID: 2100000, guid: 7cd9e5481c811a94ead30e1323026e01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jing-tou-mian
+    second: {fileID: 2100000, guid: afadf8c7b2719eb41b37b9f52c41fd2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luo-si
+    second: {fileID: 2100000, guid: 860e59d4f7e6cf143a76670753214c10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red color
+    second: {fileID: 2100000, guid: 26c770edc82674e429aceaf2da4eaff5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: robot
+    second: {fileID: 2100000, guid: dded979b6f68a8747ae1a5d43480edc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: robot2
+    second: {fileID: 2100000, guid: 4b8d2cf6e67710e439e2f4514cad6b0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 71dd893e9c12c5349bb545307c707e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zhongyang
+    second: {fileID: 2100000, guid: d23d29885bb6bd64ea807a3d825417e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u5899\u6761"
+    second: {fileID: 2100000, guid: 8c09ff82a987d7c44ae006ae1cc5d84c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u5F2F\u9053"
+    second: {fileID: 2100000, guid: 187c7194f72f3e943b2696bae270f824, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6728\u677F"
+    second: {fileID: 2100000, guid: d3cc00838a12adc409c023c04e4521f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u68DA"
+    second: {fileID: 2100000, guid: b643bb0b514dcf047b80dcbafb1b0e95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u8863\u67DC"
+    second: {fileID: 2100000, guid: ce69ce1c00ddd4b44887481274b31b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u91D1\u5C5E"
+    second: {fileID: 2100000, guid: 8648ac26f91da2e4c8251b6ab23834f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u95E8"
+    second: {fileID: 2100000, guid: eac4c2640229bb04cbba757f964a08dc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

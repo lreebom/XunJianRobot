@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="scripts/eventemitter2.min.js"></script>
+<script src="scripts/roslib.js"></script>
+
+<script>
+  // Connecting to ROS
+  // -----------------
+  var ros = new ROSLIB.Ros();
+
+  // If there is an error on the backend, an 'error' emit will be emitted.
+  ros.on('error', function(error) {
+    document.getElementById('connecting').style.display = 'none';
+    document.getElementById('connected').style.display = 'none';
+    document.getElementById('closed').style.display = 'none';
+    document.getElementById('error').style.display = 'inline';
+    console.log(error);
+  });
+
+  // Find out exactly when we made a connection.
+  ros.on('connection', function() {
+    console.log('Connection made!');
+    document.getElementById('connecting').style.display = 'none';
+    document.getElementById('error').style.display = 'none';
+    document.getElementById('closed').style.display = 'none';
+    document.getElementById('connected').style.display = 'inline';
+  });
+
+  ros.on('close', function() {
+    console.log('Connection closed.');
+    document.getElementById('connecting').style.display = 'none';
+    document.getElementById('connected').style.display = 'none';
+    document.getElementById('closed').style.display = 'inline';
+  });
+
+  // Create a connection to the rosbridge WebSocket server.
+  ros.connect('wss://192.168.1.102:9090');
+
+  // get position information
+  var listener = new ROSLIB.Topic({
+	ros : ros,
+	name : '/ucr_control/Odom',
+	messageType : 'nav_msgs/Odometry'
+  });
+
+  listener.subscribe(function(message) {
+	console.log('position_x=' + message.pose.pose.position.x + ',position_z=' + message.pose.pose.position.z);
+  });
+
+  //get camera ptz
+  var listener2 = new ROSLIB.Topic({
+	ros : ros,
+	name : '/camera_position',
+	messageType : 'robot_srv/camera_ptz'
+  });
+
+  listener2.subscribe(function(message){
+	  console.log('p_pos=' + message.p_pos/10.0 + ',t_pos=' + message.t_pos/10.0 + ',z_pos=' + message.z_pos/10.0);
+  });
+
+ //回零
+  var listener3 = new ROSLIB.Topic({
+	ros : ros,
+	name : '/ucr_command',
+	messageType : 'std_msgs/Int32MultiArray'	
+  });
+
+//判断message.data[1]==4,若成立则回零,否则没有回零
+  listener3.subscribe(function(message){
+	回零对应的操作
+  });
+
+
+//一键返航指令
+
+  var command = new ROSLIB.Service({
+	ros : ros,
+	name : '/add_command',
+	serviceType : 'robot_srv/command'
+  });
+
+  var commandRequest = new ROSLIB.ServiceRequest({
+	level : 3
+  });
+
+  command.call(commandRequest,function(result){
+  });
+
+
+//回零
+  var zero = new ROSLIB.Service({
+	ros : ros,
+	name : '/ucr_control/all_to_home',
+	serviceType : 'std_srvs/Trigger'
+  });
+
+  var zeroRequest = ServiceRequest({
+	
+  });
+
+  zero.call(zeroRequest,function(result){
+  });
+
+//控制机器人,伸缩杆运动
+  var robotControl = new ROSLIB.Service({
+	ros : ros,
+	name : '/control_to_move',
+	serviceType : 'robot_srv/move',
+  });
+
+  var robotRequest = new ROSLIB.ServiceRequest({
+	isMove : false,
+	x_speed : 0.0,
+	z_speed : 0.0
+  });
+
+//开始运动,x_speed是左右移动速度,z_speed是伸缩速度,下例为x正方向0.2速度运动,isMove=true为开始运动,isMove=false为停止
+  robotRequest.isMove=true;
+  robotRequest.x_speed=0.2;
+  robotRequest.z_speed=0.0;
+  robotControl.call(robotRequest,function(result){
+  });
+
+
+//球头控制
+  var cameraControl = new ROSLIB.Service({
+	ros : ros,
+	name : 'PTZ_Control',
+	serviceType : 'robot_srv/ptz_control'
+  });
+
+  var cameraRequest = new ROSLIB.ServiceRequest({
+	PTZCommand : 23,
+	Stop : 1,
+	Speed : 3
+  });
+
+//开始控制,PTZCommand为控制模式:23为左转,24为右转,21为上仰,22为下俯,11为焦距变大,12为焦距变小.Stop=1为停止,Stop=0为开始运动,Speed为运动速度,分为1-6.下例为以4的速度,右转
+  cameraRequest.PTZCommand=24;
+  cameraRequest.Stop=0;
+  cameraRequest.Speed=4;
+  cameraControl.call(cameraRequest,function(result){
+
+  });
+
+
+</script>
+</head>
+
+</style>
+<body>
+  <h1>Simple roslib Example</h1>
+  <div id="statusIndicator">
+    <p id="connecting">
+      Connecting to rosbridge...
+    </p>
+    <p id="connected" style="color:#00D600; display:none">
+      Connected
+    </p>
+    <p id="error" style="color:#FF0000; display:none">
+      Error in the backend!
+    </p>
+    <p id="closed" style="display:none">
+      Connection closed.
+    </p>
+  </div>
+</body>
+</html>
